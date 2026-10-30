@@ -1,10 +1,16 @@
-.header{
-    width: 100%;
-    height: 100%;   
-    background-color: #c8167b;
+import './Header.css'
+import {Link} from 'react-router-dom'
+function Header(){
+    return(
+        <div>
+    <div class="header">
+      <Link to="/">Home</Link>
+      <Link to="/about">About us</Link>
+      <Link to="/contact">Contact us</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
+     </div>
+        </div>
+    )
 }
-a{
-    color: #1ccfe3;
-    text-decoration: none;
-    padding: 5px;
-}
+export default Header
